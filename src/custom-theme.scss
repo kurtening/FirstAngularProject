@@ -12,11 +12,11 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$FirstAngularProject-primary: mat-palette($mat-indigo);
-$FirstAngularProject-accent: mat-palette($mat-pink, A200, A100, A400);
+$FirstAngularProject-primary: mat-palette($md-dxcblack);
+$FirstAngularProject-accent: mat-palette($md-dxcwhite);
 
 // The warn palette is optional (defaults to red).
-$FirstAngularProject-warn: mat-palette($mat-red);
+$FirstAngularProject-warn: mat-palette($md-dxcyellow);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $FirstAngularProject-theme: mat-light-theme($FirstAngularProject-primary, $FirstAngularProject-accent, $FirstAngularProject-warn);
