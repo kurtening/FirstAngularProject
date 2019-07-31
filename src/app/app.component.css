@@ -5,3 +5,17 @@
 span{
     padding-right: 1rem;
 }
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav,mat-sidenav-content{
+    padding: 16px;
+    box-shadow: 0 0 0 0 !important;
+    border-left:0.05rem solid;
+}
+
+mat-sidenav {
+    width:200px;
+}

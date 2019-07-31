@@ -1,10 +1,23 @@
+<mat-sidenav-container hasBackdrop="false">
+
 <mat-toolbar class="navbar" color="primary">
     <div>
-        DXC Technology
+       <!-- <img src="../assets/img/dxc_logo_hz_wht_rgb.png" alt=""> -->
+        DXC.Technology
     </div>
     <div>
         <span>Home</span>
         <span>About</span>
         <span>Services</span>
+        <button mat-raised-button color="accent" (click)="opened=!opened">
+            <mat-icon>menu</mat-icon>
+        </button>
     </div>
 </mat-toolbar>
+
+    <mat-sidenav #sidenav [(opened)]="opened" position="end" disableClose>
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon style="font-size:60px">close</mat-icon>
+    </button>
+    </mat-sidenav>
+</mat-sidenav-container>

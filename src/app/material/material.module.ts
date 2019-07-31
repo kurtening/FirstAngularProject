@@ -1,14 +1,28 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatButtonToggleModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, 
+        MatButtonToggleModule, 
+        MatToolbarModule, 
+        MatIconModule, 
+        MatBadgeModule, 
+        MatProgressBarModule, 
+        MatProgressSpinnerModule, 
+        MatSidenavModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
-const MaterialComponents = [
+const material = [
   MatButtonModule,
   MatButtonToggleModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatIconModule,
+  MatBadgeModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatSidenavModule,
+  FormsModule
 ]
 
 @NgModule({
-  imports: [MaterialComponents],
-  exports: [MaterialComponents]
+  imports: [material],
+  exports: [material]
 })
 export class MaterialModule { }
